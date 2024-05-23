@@ -1,0 +1,25 @@
+.cabeca{
+    max-width: 80%;
+    background-color: blue;
+    text-align: center;
+    margin-top: 0 ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cabeca h1{
+    color: white;
+}
+
+.conteudo{
+    max-width: 81%;
+    margin: 10px auto;
+}
+
+.caixa{
+    background-color: black;
+    width: 49%;    
+    margin: 0.5% 0.5%;
+    height: 110px;    
+    float: left;
+}
