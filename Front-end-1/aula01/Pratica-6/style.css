@@ -70,3 +70,24 @@ img {
     border-radius: 1vw;
 }
 
+.offer, .firstOffer{
+    float: left;
+    width: 20vw;
+    text-align: left;
+    height: 15vh;
+    font-size: 2vh;
+}
+
+.firstOffer{
+    border-right: solid rgb(146, 144, 144);
+}
+
+.offerTitle{
+    margin-top: 3.5vh;
+}
+
+.offerTitle, .subTitle{
+    margin-left: 1vw;
+}
+
+
