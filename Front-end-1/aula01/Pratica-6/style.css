@@ -23,6 +23,21 @@ img {
 }
 
 .top{
-    background-color: rgb(243, 213, 61);
+    background-color: #ffdb15;
     height: 14vh;
+}
+
+#SearchBar{
+    height: 2.5vh;
+    margin-top: 2vh;
+}
+
+.srcTop{
+    text-align: center;
+    height: 7vh;
+}
+
+.menuTop{
+    height: 7vh;
+    text-align: center;
 }
