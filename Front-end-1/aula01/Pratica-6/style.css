@@ -110,6 +110,6 @@ img {
 .marketItem:hover{
     transition-duration: 0.3s;
     transition-timing-function: linear;
-    height: 230px;
+    height: 245px;
 }
 
