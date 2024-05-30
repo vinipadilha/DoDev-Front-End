@@ -98,8 +98,18 @@ img {
 }
 
 .marketItem{
-    
+    background-color: white;
+    overflow: hidden;
+    float: left;
+    width: 15vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    height: 210px;
 }
 
-
+.marketItem:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    height: 330px;
+}
 
