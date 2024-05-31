@@ -113,3 +113,18 @@ img {
     height: 245px;
 }
 
+.form p{
+    margin-bottom: 0.5vh;
+    margin-top: 4vh;
+}
+
+.form input, select{
+    width: 30vw;
+    height: 4vh;
+}
+
+#enviar{
+    margin-top: 8vh;
+    background-color: darkgrey;
+    border-color: darkgrey;
+}
