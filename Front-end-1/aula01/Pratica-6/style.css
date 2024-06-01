@@ -121,6 +121,7 @@ img {
 .form input, select{
     width: 30vw;
     height: 4vh;
+    border-radius: 0.6vw;
 }
 
 #enviar{
