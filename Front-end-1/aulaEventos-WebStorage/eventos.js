@@ -1,12 +1,13 @@
 
 function executar(event){
     console.log("Botão clicado")
-    console.log(screenY)
     console.log(event)
 
 }
 
 document.getElementById('form',  ).addEventListener("submit", (e) =>{
+
+    console.log(e)
     alert("Recebido")
 })
 
@@ -23,6 +24,12 @@ function aumentaImagem(event){
     event.target.style.height = "50vh"
 }
 
+
+function salvar(){
+    window.sessionStorage.setItem('período', 'manhã')
+}
+
+document.getElementById("inputText").addEventListener()
 
 
 
