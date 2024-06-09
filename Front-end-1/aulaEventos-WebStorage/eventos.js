@@ -6,7 +6,6 @@ function executar(event){
 
 }
 
-
 document.getElementById('form',  ).addEventListener("submit", (e) =>{
     alert("Recebido")
 })
