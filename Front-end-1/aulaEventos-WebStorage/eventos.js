@@ -1,6 +1,6 @@
 
 function executar(event){
-    console.log("Olá")
+    console.log("Botão clicado")
     console.log(screenY)
     console.log(event)
 
