@@ -1,7 +1,4 @@
 
-
-
-
 function executar(event){
     console.log("Olá")
     console.log(screenY)
@@ -27,3 +24,7 @@ function diminuiImagem(event){
 function aumentaImagem(event){
     event.target.style.height = "50vh"
 }
+
+
+
+
