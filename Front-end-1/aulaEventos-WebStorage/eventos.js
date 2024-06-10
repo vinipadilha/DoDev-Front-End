@@ -29,7 +29,20 @@ function salvar(){
     window.sessionStorage.setItem('período', 'manhã')
 }
 
-document.getElementById("inputText").addEventListener()
+function InputSave(text){
+    window.sessionStorage.setItem('texto input', text)
+
+}
+
+document.getElementById("inputText").addEventListener("blur", (event) => {
+    console.log(event.target.value) // faz aparecer no console o texto do input
+    InputSave(event.target.value)
+})
+
+// setItem
+// getItem
+// removeItem
+// clear()
 
 
 
