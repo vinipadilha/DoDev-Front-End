@@ -39,9 +39,9 @@ document.getElementById("inputText").addEventListener("blur", (event) => {
     InputSave(event.target.value)
 })
 
-// setItem
-// getItem
-// removeItem
+// setItem define valor e chave 
+// getItem busca valor atraves da chave
+// removeItem remove valor associado a chave 
 // clear()
 
 
