@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Media Queries</title>
+
+    <style>
+        body{
+            background-color: lightcoral;
+        }
+        p{
+            font-size: 100px;
+        }
+
+        @media (max-width: 1000px){
+            body{
+                background-color: lightseagreen;
+            }
+
+            p{
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+        }
+    </style>
+
 </head>
 <body>
+    <p>Quando estiver menor de 500px de tela a cor de fundo será lightcoral, agora quando for maior será lightseagreen</p>
+
     
 </body>
 </html>
