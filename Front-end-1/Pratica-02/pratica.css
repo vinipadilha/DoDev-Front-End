@@ -53,12 +53,23 @@ body{
     border: 1.5px solid #3E3E3E;
 }
 
-.text input{
-    width: 20vw;
+.box input[type="text"]{
+  width: 100%; 
+  padding: 2%;
+  margin-top: 1%; 
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
+  display: block; 
 }
 
+.box input[type="time"]{
+  width: 20%; 
+  padding: 2%;
+  margin-top: 1%; 
+  border: 1px solid #ccc; 
+  border-radius: 3px; 
 
-
+}
 
 
 
