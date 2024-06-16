@@ -23,24 +23,39 @@ html {
   }
 
 body{
-    background-color: #EBEEF0;
+    background-color: #3E3E3E;
 }
 
 .box {
-    height: 40vh;
-    width: 40vw;
+    height: 70vh;
+    width: 45vw;
     background-color:#F6F7F8;
     border: 1.7px solid #5F6368;
     margin: auto auto;
-    margin-top: 30vh;
-    border-radius: 10px;
+    margin-top: 15vh;
+    border-radius: 12px;
 }
 
 .box form{
     margin: 2vw 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
+.box p{
+  text-align: center;
+  margin-top: 2vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box input {
+    height: 5vh;
+    border-radius: 5px;
+    border: 1.5px solid #3E3E3E;
+}
 
+.text input{
+    width: 20vw;
+}
 
 
 
