@@ -27,12 +27,12 @@ body{
 }
 
 .box {
-    height: 70vh;
+    height: 76vh;
     width: 45vw;
     background-color:#F6F7F8;
     border: 1.7px solid #5F6368;
     margin: auto auto;
-    margin-top: 15vh;
+    margin-top: 12vh;
     border-radius: 12px;
 }
 
@@ -78,10 +78,22 @@ body{
 .box input[type="submit"]{
   background-color: #3E3E3E;
   color: white;
-  margin-top: 1vh;
+  margin-top: 5vh;
+  width: 100%;
 }
 
+form input[type="checkbox"] {
+  margin-right: 2%; 
+  cursor: pointer;
+}
 
+form input[type="text"]{
+  cursor: text;
+}
+
+form label {
+  cursor: pointer; 
+}
 
 
 
