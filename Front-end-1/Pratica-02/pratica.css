@@ -91,10 +91,22 @@ form input[type="text"]{
   cursor: text;
 }
 
+form input[type="time"]{
+  cursor: text;
+
+}
+
 form label {
   cursor: pointer; 
 }
 
+.box input[type="text"]:focus,
+.box input[type="time"]:focus,
+.box input[type="checkbox"]:focus{
+    border-color: purple; 
+    outline: none; 
+    border-width: 1.5px;
+}
 
 
 
