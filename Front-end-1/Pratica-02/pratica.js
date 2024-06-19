@@ -1,1 +1,1 @@
-const form = document.getElementById("cadastro")
+const form = document.getElementById("form")
