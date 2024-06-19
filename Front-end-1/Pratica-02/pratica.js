@@ -1,4 +1,1 @@
-function atualizacao(){
-    console.log("")
-
-}
+const form = document.getElementById("cadastro")
