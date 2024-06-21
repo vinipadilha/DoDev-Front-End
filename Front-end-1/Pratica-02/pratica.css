@@ -1,113 +1,93 @@
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
-body{
-    background-color: #3E3E3E;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #3E3E3E;
 }
 
 .box {
-    height: 76vh;
-    width: 45vw;
-    background-color:#F6F7F8;
-    border: 1.7px solid #5F6368;
-    margin: auto auto;
-    margin-top: 12vh;
-    border-radius: 12px;
+  height: auto; /* Ajuste de altura */
+  width: 45vw;
+  background-color: #F6F7F8;
+  border: 1.7px solid #5F6368;
+  margin: auto;
+  margin-top: 12vh;
+  border-radius: 12px;
+  padding: 20px; /* Adicionei padding para dar espaço interno */
 }
 
-.box form{
-    margin: 2vw 2vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+.box form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.box p{
+.box p {
   text-align: center;
   margin-top: 1vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.box input {
-    height: 5vh;
-    border-radius: 5px;
-    border: 1.5px solid #3E3E3E;
+  margin-bottom: 2vh; /* Adicionei margem inferior */
 }
 
-.box input[type="text"]{
-  width: 100%; 
-  padding: 2%;
-  margin-top: 1vh; 
-  border: 1px solid #ccc; 
-  border-radius: 3px; 
-  display: block; 
+.box label {
+  display: block;
+  margin-bottom: 0.5vh; /* Espaçamento inferior entre o label e o input */
 }
 
-.box input[type="time"]{
-  width: 15%; 
-  padding: 2%;
-  margin-top: 1%; 
-  border: 1px solid #ccc; 
-  border-radius: 3px; 
-
+.box input[type="text"],
+.box input[type="time"] {
+  width: 100%; /* Ajustar a largura */
+  padding: 8px; /* Diminuir o padding */
+  margin-bottom: 1vh; /* Espaçamento entre os inputs */
+  border: 1.5px solid #3E3E3E;
+  border-radius: 5px;
+  display: block; /* Certificar-se de que o display é block */
+  box-sizing: border-box; /* Para garantir que o padding não cause overflow */
 }
 
-.text input{
-  margin-bottom: -5vh;
-}
-
-.box input[type="submit"]{
+.box input[type="submit"] {
   background-color: #3E3E3E;
   color: white;
-  margin-top: 5vh;
+  margin-top: 2vh;
   width: 100%;
-}
-
-form input[type="checkbox"] {
-  margin-right: 2%; 
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-form input[type="text"]{
-  cursor: text;
-}
-
-form input[type="time"]{
-  cursor: text;
-
+form input[type="checkbox"] {
+  margin-right: 2%;
+  cursor: pointer;
 }
 
 form label {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .box input[type="text"]:focus,
 .box input[type="time"]:focus,
-.box input[type="checkbox"]:focus{
-    border-color: purple; 
-    outline: none; 
-    border-width: 1.5px;
+.box input[type="checkbox"]:focus {
+  border-color: purple;
+  outline: none;
+  border-width: 1.5px;
 }
-
-
-
-
