@@ -15,19 +15,5 @@ form.addEventListener("submit", (event)=> {
 
 })
 
-fetch('https://api.flit.com.br/submeterDados', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-})
-.then(data => {
-    console.log('Success:', data);
-})
-.catch((error) => {
-    console.error('Error:', error);
-});
-
 
 

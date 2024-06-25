@@ -48,7 +48,6 @@ body {
 }
 
 .box label {
-  display: block;
   margin-bottom: 0.5vh;
 }
 
@@ -101,4 +100,29 @@ form label {
 .days input[type="checkbox"] {
   display: inline-block;
   margin-bottom: 0.5vh;
+}
+
+/* Layout responsivo */
+@media (min-width: 800px) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 799px) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 399px) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
