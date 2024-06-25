@@ -27,14 +27,13 @@ body {
 }
 
 .box {
-  height: auto; /* Ajuste de altura */
   width: 45vw;
   background-color: #F6F7F8;
   border: 1.7px solid #5F6368;
   margin: auto;
   margin-top: 12vh;
   border-radius: 12px;
-  padding: 20px; /* Adicionei padding para dar espaço interno */
+  padding: 20px;
 }
 
 .box form {
@@ -45,23 +44,22 @@ body {
   text-align: center;
   margin-top: 1vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 2vh; /* Adicionei margem inferior */
+  margin-bottom: 2vh;
 }
 
 .box label {
   display: block;
-  margin-bottom: 0.5vh; /* Espaçamento inferior entre o label e o input */
+  margin-bottom: 0.5vh;
 }
 
 .box input[type="text"],
 .box input[type="time"] {
-  width: 100%; /* Ajustar a largura */
-  padding: 8px; /* Diminuir o padding */
-  margin-bottom: 1vh; /* Espaçamento entre os inputs */
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1vh;
   border: 1.5px solid #3E3E3E;
   border-radius: 5px;
-  display: block; /* Certificar-se de que o display é block */
-  box-sizing: border-box; /* Para garantir que o padding não cause overflow */
+  box-sizing: border-box;
 }
 
 .box input[type="submit"] {
@@ -82,7 +80,6 @@ form input[type="checkbox"] {
 
 form label {
   cursor: pointer;
-  
 }
 
 .box input[type="text"]:focus,
@@ -91,4 +88,17 @@ form label {
   border-color: purple;
   outline: none;
   border-width: 1.5px;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1vh;
+}
+
+.days label,
+.days input[type="checkbox"] {
+  display: inline-block;
+  margin-bottom: 0.5vh;
 }

@@ -3,62 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Lojas</title>
     <link rel="stylesheet" href="pratica.css">
-    
 </head>
 <body>
-
-    <section class="box">
-        <p>Cadastro de Lojas</p>
-
-        <form action="" method="post" id="form">
-            <div class="text">
-                <label for="name">Nome da loja: </label> <br>
-                <input type="text" id="name" placeholder=" Ex: Jonas Estofados"><br> <br>
-
-                <label for="address">Endereço: </label> <br>
-                <input type="text" id="address" placeholder=" Ex: João Silva, 151"><br> <br>
-
-
-                <label for="open">Horário de abertura </label>
-                <input type="time" id="open"> <br><br>
-
-                <label for="close">Horário de fechamento </label>
-                <input type="time" id="close"><br>
-                <br>
-            </div>
-
-            <p>Dias abertos </p>
-            <label for="segunda">Segunda-feira</label> 
+<section class="box">
+    <p>Cadastro de Lojas</p>
+    <form id="form" method="post">
+        <div class="text">
+            <label for="name">Nome da loja:</label>
+            <input type="text" id="name" placeholder="Ex: Jonas Estofados">
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" placeholder="Ex: João Silva, 151">
+            <label for="open">Horário de abertura</label>
+            <input type="time" id="open">
+            <label for="close">Horário de fechamento</label>
+            <input type="time" id="close">
+        </div>
+        <p>Dias abertos</p>
+        <div class="days">
+            <label for="segunda">Segunda-feira</label>
             <input type="checkbox" id="segunda" value="segunda-feira">
-
             <label for="terça">Terça-feira</label>
             <input type="checkbox" id="terça" value="terça-feira">
-
             <label for="quarta">Quarta-feira</label>
-            <input type="checkbox" id="quarta" value="quarta-feira"><br>
-
+            <input type="checkbox" id="quarta" value="quarta-feira">
             <label for="quinta">Quinta-feira</label>
             <input type="checkbox" id="quinta" value="quinta-feira">
-
             <label for="sexta">Sexta-feira</label>
             <input type="checkbox" id="sexta" value="sexta-feira">
-
             <label for="sabado">Sábado</label>
             <input type="checkbox" id="sabado" value="sábado">
-
             <label for="domingo">Domingo</label>
             <input type="checkbox" id="domingo" value="domingo">
-
-            <br>
-            <input type="submit" name="" id="submit-btn">
-        </form>
-
-    </section>
-
-    
-
-    <script src="pratica.js"></script>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+<script src="pratica.js"></script>
 </body>
 </html>
