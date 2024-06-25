@@ -82,6 +82,7 @@ form input[type="checkbox"] {
 
 form label {
   cursor: pointer;
+  
 }
 
 .box input[type="text"]:focus,
