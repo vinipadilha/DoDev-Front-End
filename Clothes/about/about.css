@@ -21,7 +21,7 @@ html {
 .nav{
     height: 12vh; /* */
     width: 100vw;
-    background-color: rgba(206, 206, 206, 0.566);
+    background-color: #232122;
     display: flex; /* Usa flexbox para alinhar os intens*/
     align-items: center; /* Alinha os itens no centro verticalmente */
     position: fixed; /* Fixa a nav no topo da página */
@@ -40,11 +40,12 @@ body{
 .options {
     width: 100vw;
     text-align: center;
+
 }
   
   .options li {
     display: inline-block; /*Exibe os itens da lista em ordem de linha*/
-    margin: 0 30px; /*Adiciona uma margem lateral de 30px em cada lado, 0 margem nos sentidos cima e baixo*/
+    margin: 0 20px; /*Adiciona uma margem lateral de 30px em cada lado, 0 margem nos sentidos cima e baixo*/
 }
 
 .options p {
@@ -55,16 +56,16 @@ body{
 .options li a{
     text-align: center; /* Centraliza o texto dentro do link */
     text-decoration: none; /* Remove o sublinhado dos links */
-    color: black;
+    color: white;
     font-size: 3vh; 
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .options p{
-    color: black;
+    color: white;
     font-size: 3vh;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-right: 50vw; /*margem a direita, para distanciar das outras páginas*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 46vw; /*margem a direita, para distanciar das outras páginas*/
     font-size: 2vw;
 }
 
@@ -73,7 +74,8 @@ body{
 }
 
 img{
-    height: 4vh;
+    height: 5vh;
+    margin-bottom: -1vh;
 }
 
 /*==================================================================================================*/
@@ -86,6 +88,15 @@ h1{
     font-size: 4vh;
 }
 
+.content p {
+    margin-top: 5vh;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+}
 
 
 
