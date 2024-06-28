@@ -19,7 +19,7 @@ html {
   }
 
 .nav{
-    height: 11vh; /* */
+    height: 12vh; /* */
     width: 100vw;
     background-color: rgba(206, 206, 206, 0.566);
     display: flex; /* Usa flexbox para alinhar os intens*/
@@ -52,7 +52,7 @@ body{
     margin: 0 30px;
 }
   
-  .options li a{
+.options li a{
     text-align: center; /* Centraliza o texto dentro do link */
     text-decoration: none; /* Remove o sublinhado dos links */
     color: black;
@@ -70,6 +70,10 @@ body{
 
 .options li a:hover{
     font-weight: bold; /*Texto fica em negrito ao passar o mouse por cima*/
+}
+
+img{
+    height: 4vh;
 }
 
 /*==================================================================================================*/
