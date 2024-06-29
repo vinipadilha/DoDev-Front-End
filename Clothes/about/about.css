@@ -13,22 +13,21 @@ html {
   ol, ul {
     list-style: none;
   }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+
 
 .nav{
     height: 12vh; /* */
     width: 100vw;
-    background-color: #232122;
+    background-color: #232122e5;
     display: flex; /* Usa flexbox para alinhar os intens*/
     align-items: center; /* Alinha os itens no centro verticalmente */
     position: fixed; /* Fixa a nav no topo da página */
+    z-index: 1000;
 }
 
 body{
     height: 100vh;
+    
 }
 
 .content{
@@ -73,9 +72,10 @@ body{
     font-weight: bold; /*Texto fica em negrito ao passar o mouse por cima*/
 }
 
-img{
+.cartImg{
     height: 5vh;
     margin-bottom: -1vh;
+    
 }
 
 
@@ -87,8 +87,13 @@ img{
     margin-bottom: 10vh;
     padding: 2%;
     background-color: #dbdcd3c1;
-    box-shadow: 4px 4px 8px #888888; /*10px é o deslocamento horizontal da sombra. 10px é o deslocamento vertical da sombra. 5px é o raio de desfoque da sombra. #888888 é a cor da sombra.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
     border-radius: 15px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Transições com ease-out */
+}
+
+.form:hover{
+    transform: scale(1.04); /* Aumenta ligeiramente o tamanho ao passar o mouse */
 }
 
 .form h4{
@@ -108,7 +113,7 @@ img{
 }
 
 .form input:focus {
-    border: 1.5px solid #232122; /* Adiciona uma borda azul quando o campo está em foco */
+    border: 1.5px solid #232122; 
     outline: none; /* Remove o contorno padrão */
 }
 

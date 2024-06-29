@@ -18,10 +18,11 @@ html {
 .nav{
     height: 12vh; /* */
     width: 100vw;
-    background-color: #232122;
+    background-color: #232122e5;
     display: flex; /* Usa flexbox para alinhar os intens*/
     align-items: center; /* Alinha os itens no centro verticalmente */
     position: fixed; /* Fixa a nav no topo da página */
+    z-index: 1000;
 }
 
 body{
@@ -86,8 +87,13 @@ body{
     margin-bottom: 10vh;
     padding: 2%;
     background-color: #dbdcd3c1;
-    box-shadow: 4px 4px 8px #888888; /*10px é o deslocamento horizontal da sombra. 10px é o deslocamento vertical da sombra. 5px é o raio de desfoque da sombra. #888888 é a cor da sombra.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
     border-radius: 15px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Transições com ease-out */
+}
+
+.form:hover{
+    transform: scale(1.02); /* Aumenta ligeiramente o tamanho ao passar o mouse */
 }
 
 .form h4{
@@ -107,7 +113,7 @@ body{
 }
 
 .form input:focus {
-    border: 1.5px solid #232122; /* Adiciona uma borda azul quando o campo está em foco */
+    border: 1.5px solid #232122; 
     outline: none; /* Remove o contorno padrão */
 }
 
@@ -171,29 +177,44 @@ body{
     border-radius: 10px;
     display: inline-block;
     margin: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Transições com ease-out */
 }
+
 
 .box img{
     padding: 5%;
     max-width: 100%;
     height: auto;
+    z-index: 1; /* Garanta que o z-index seja menor que o da .nav */
+}
+
+.box h3, p{
+    margin-left: 1.5vw;
+    font-family: "Playwrite DE Grund", cursive;
+    text-align: left;
+    color: black;
 }
 
 .box h3{
-    margin-left: 1.5vw;
     margin-top: -2vh;
     font-size: 20px;
-    font-family: "Playwrite DE Grund", cursive;
-    text-align: left;
 }
 
 .box p{
-    margin-left: 1.5vw;
     font-size: 15px;
-    font-family: "Playwrite DE Grund", cursive;
-    text-align: left;
 }
 
+.products .box a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
 
+.box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    z-index: 2; /* Aumente o z-index no hover para garantir que fique acima da .nav */
+}
+
+/*A função ease-out é uma das funções de temporização (timing functions) disponíveis no CSS para controlar como uma animação ou transição progride ao longo do tempo. Ela faz parte do conjunto de funções padrão de temporização CSS, que inclui ease, ease-in, ease-out, ease-in-out, linear e step-start, step-end.*/
 
 
