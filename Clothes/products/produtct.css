@@ -122,7 +122,6 @@ body{
 /*======================================================================================*/
 
 
-
 .boxImg {
     display: flex;
     flex-direction: column;
@@ -132,9 +131,7 @@ body{
     display: inline-block;
 }
 
-/* Restante do seu CSS existente ... */
 
-/* Estilos para a imagem principal */
 .main-image {
     position: relative; /* Necessário para posicionar corretamente o pseudo-elemento */
 }
@@ -166,9 +163,20 @@ body{
 }
 
 
-.productInfo{
-    margin-top: 0vh;
-    display: inline-block;
+.productInfo {
+    width: 40%; /* Largura da div de informações do produto */
+    padding: 0 20px; /* Espaçamento interno */
+    font-family: "Playwrite DE Grund", cursive;
+    margin-left: 50vw;
 }
 
+.productInfo h2 {
+    font-size: 24px;
+    margin-top: 0;
+
+}
+
+.productInfo p {
+    font-size: 18px;
+}
 
