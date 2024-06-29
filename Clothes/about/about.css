@@ -98,5 +98,28 @@ h1{
     font-style: normal;
 }
 
+.form{
+    width: 60vw;
+    margin-left: 20vw;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 2%;
+    background-color: rgba(178, 177, 177, 0.3);
+    box-shadow: 6px 6px 8px #888888; /*10px é o deslocamento horizontal da sombra. 10px é o deslocamento vertical da sombra. 5px é o raio de desfoque da sombra. #888888 é a cor da sombra.*/
+    border-radius: 15px;
+}
+
+.form h4{
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 20px;
+    margin-top: -2vh;
+    margin-bottom: 1vh;
+}
+
+.form input{
+    width: 20vw;
+    border-radius: px;
+}
 
 
