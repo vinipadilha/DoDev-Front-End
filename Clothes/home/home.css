@@ -89,12 +89,8 @@ body{
     background-color: #dbdcd3c1;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
     border-radius: 15px;
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Transições com ease-out */
 }
 
-.form:hover{
-    transform: scale(1.02); /* Aumenta ligeiramente o tamanho ao passar o mouse */
-}
 
 .form h4{
     font-family: "Playwrite DE Grund", cursive;
@@ -127,7 +123,6 @@ body{
 .bannerImg {
     margin-top: 5vh;
     text-align: center;
-
 }
 
 .bannerImg img{
@@ -135,18 +130,15 @@ body{
     height: auto;
 }
 
-
 .title {
-    margin-top: 18vh;
+    margin-top: 14vh;
     margin-bottom: 6vh;
 }
 
 .title h1{
-    margin-top: 18vh;
     text-align: center;
     font-size: 35px;
     font-family: "Playwrite DE Grund", cursive;
-
 }
 
 .title h6{
@@ -172,7 +164,7 @@ body{
 
 .box{
     width: 25vw;
-    height: 420px;
+    height: 390px;
     background: #dbdcd3c1;
     border-radius: 10px;
     display: inline-block;
