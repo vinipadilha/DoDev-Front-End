@@ -32,7 +32,7 @@ body{
 }
 
 .content{
-    background-color: white;
+    background-color: #EEEEEA;
     height: 100vh;
     overflow: auto; /* previne o colapso das margens, assim uma não fica em cima da outra*/
 }
@@ -78,6 +78,44 @@ img{
     margin-bottom: -1vh;
 }
 
+
+.form{
+    width: 60vw;
+    margin-left: 20vw;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 2%;
+    background-color: #dbdcd3c1;
+    box-shadow: 4px 4px 8px #888888; /*10px é o deslocamento horizontal da sombra. 10px é o deslocamento vertical da sombra. 5px é o raio de desfoque da sombra. #888888 é a cor da sombra.*/
+    border-radius: 15px;
+}
+
+.form h4{
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 20px;
+    margin-top: -2vh;
+    margin-bottom: 1vh;
+}
+
+.form input{
+    width: 20vw;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    margin: 8px 8px;
+    font-size: 13px;    
+}
+
+.form input:focus {
+    border: 1.5px solid #232122; /* Adiciona uma borda azul quando o campo está em foco */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.form input[type="submit"]{
+    background-color: #a0a198;
+}
+
 /*==================================================================================================*/
 
 h1{
@@ -97,30 +135,4 @@ h1{
     font-weight: 250;
     font-style: normal;
 }
-
-.form{
-    width: 60vw;
-    margin-left: 20vw;
-    text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    padding: 2%;
-    background-color: rgba(178, 177, 177, 0.3);
-    box-shadow: 6px 6px 8px #888888; /*10px é o deslocamento horizontal da sombra. 10px é o deslocamento vertical da sombra. 5px é o raio de desfoque da sombra. #888888 é a cor da sombra.*/
-    border-radius: 15px;
-}
-
-.form h4{
-    font-family: "Playwrite DE Grund", cursive;
-    font-size: 20px;
-    margin-top: -2vh;
-    margin-bottom: 1vh;
-}
-
-.form input{
-    width: 20vw;
-    border-radius: 5px;
-    
-}
-
 
