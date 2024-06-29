@@ -119,7 +119,8 @@ h1{
 
 .form input{
     width: 20vw;
-    border-radius: px;
+    border-radius: 5px;
+    
 }
 
 
