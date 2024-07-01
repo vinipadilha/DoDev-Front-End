@@ -83,7 +83,7 @@ body{
     width: 60vw;
     margin-left: 20vw;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 20vh;
     margin-bottom: 10vh;
     padding: 2%;
     background-color: #dbdcd3c1;
@@ -126,7 +126,7 @@ body{
     margin-top: 16vh;
     height: 90vh;
     width: 38vw;
-    border: 2px solid black;
+    border: 2px solid transparent;
     float: left;
 }
 
@@ -141,12 +141,32 @@ body{
 .mainImg{
     padding: 1%;
     text-align: center;
+
+    position: relative;
+    height: auto;
+    width: 100%;
 }
 
 .mainImg img{
     height: auto;
     width: 86%;
+    border: 2px solid transparent; /* Inicializa a borda transparente */
+    border-radius: 6px;
 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Todas as imagens começam invisíveis */
+    transition: opacity 0.5s ease; /* Anima a transição de opacidade */
+}
+
+
+/* Mostra a imagem correta quando o input correspondente é selecionado */
+#img1:checked ~ .images .img1,
+#img2:checked ~ .images .img2,
+#img3:checked ~ .images .img3,
+#img4:checked ~ .images .img4 {
+    opacity: 1;
 }
 
 .othersImg{
@@ -158,17 +178,22 @@ body{
 .othersImg img{
     height: auto;
     width: 24%;
+    border: 2px solid transparent; /* Inicializa a borda transparente */
+    transition: border-color 0.3s; /* Adiciona transição suave para a cor da borda */
+    border-radius: 5px;
 }
 
-.othersImg img:hover{
-    border: 2px solid rgba(0, 0, 0, 0.859);
+.othersImg img:hover {
+    border-color: #232122; /* Cor da borda ao passar o mouse */
 }
 
 
+.mainImg input { /* Esconde os inputs de radio */
+    display: none;
+}
 
-
-
-
-
+.othersImg label { /* Adiciona cursor pointer às miniaturas */
+    cursor: pointer;
+}
 
 

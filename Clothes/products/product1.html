@@ -27,18 +27,29 @@
     <section class="content">
 
         <div class="columnImg">
+            <!-- Adiciona inputs do tipo radio para controlar a imagem principal -->
             <div class="mainImg">
-                <img src="/imagens/camiseta1-1.jpg" alt="Imagem 1 da camiseta 1">
+                <input type="radio" id="img1" name="mainImage" checked>
+                <input type="radio" id="img2" name="mainImage">
+                <input type="radio" id="img3" name="mainImage">
+                <input type="radio" id="img4" name="mainImage">
+        
+                <div class="images">
+                    <!-- Adiciona classes específicas para cada imagem -->
+                    <img src="/imagens/camiseta1-1.jpg" alt="Imagem 1 da camiseta 1" class="img1">
+                    <img src="/imagens/camiseta1-2.jpg" alt="Imagem 2 da camiseta 1" class="img2">
+                    <img src="/imagens/camiseta1-3.jpg" alt="Imagem 3 da camiseta 1" class="img3">
+                    <img src="/imagens/camiseta1-4.jpg" alt="Imagem 4 da camiseta 1" class="img4">
+                </div>
             </div>
-
+        
+            <!-- Usa labels para associar as miniaturas aos inputs de radio -->
             <div class="othersImg">
-                <img src="/imagens/camiseta1-1.jpg" alt="Imagem 1 da camiseta 1">
-                <img src="/imagens/camiseta1-2.jpg" alt="Imagem 2 da camiseta 1">
-                <img src="/imagens/camiseta1-3.jpg" alt="Imagem 3 da camiseta 1">
-                <img src="/imagens/camiseta1-4.jpg" alt="Imagem 4 da camiseta 1">
+                <label for="img1"><img src="/imagens/camiseta1-1.jpg" alt="Imagem 1 da camiseta 1"></label>
+                <label for="img2"><img src="/imagens/camiseta1-2.jpg" alt="Imagem 2 da camiseta 1"></label>
+                <label for="img3"><img src="/imagens/camiseta1-3.jpg" alt="Imagem 3 da camiseta 1"></label>
+                <label for="img4"><img src="/imagens/camiseta1-4.jpg" alt="Imagem 4 da camiseta 1"></label>
             </div>
-
-
         </div>
 
         <div class="columnInfo">
