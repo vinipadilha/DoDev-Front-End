@@ -196,6 +196,9 @@ body{
     font-weight: bold;
 }
 
+.text-info{
+    margin-top: 8vh;
+}
 
 
 
@@ -245,3 +248,29 @@ body{
     border-color: black; 
     outline: none; /* Remove a borda de foco padrão */
 }
+
+.btn-cart button{
+    width: 83%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #232122;
+    color: white;
+    font-family: "Playwrite DE Grund", cursive;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
+    border: 2px solid transparent ;
+}
+
+.btn-cart button:hover{
+    background-color: #E0E1D9;
+    color: #333;
+    border: 2px solid #333;
+}
+
+
+.btn-cart{
+    margin-top: 2vh;
+}
+
+
