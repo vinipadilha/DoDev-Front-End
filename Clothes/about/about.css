@@ -97,7 +97,6 @@ body{
     margin-top: -2vh;
     margin-bottom: 1vh;
 }
-
 .form input{
     width: 20vw;
     border-radius: 5px;
@@ -105,6 +104,7 @@ body{
     padding: 8px;
     margin: 8px 8px;
     font-size: 13px;    
+    border: 1.5px solid transparent; 
 }
 
 .form input:focus {
@@ -115,6 +115,12 @@ body{
 .form input[type="submit"]{
     background-color: #a0a198;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+.form input[type="submit"]:hover{
+    background-color: #232122;
+    color: white;
 }
 /*==================================================================================================*/
 

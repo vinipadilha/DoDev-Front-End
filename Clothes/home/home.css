@@ -63,7 +63,7 @@ body{
 
 .options p{
     color: white;
-    font-size: 3vh;
+    font-size: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-right: 46vw; /*margem a direita, para distanciar das outras páginas*/
     font-size: 2vw;
@@ -105,6 +105,7 @@ body{
     padding: 8px;
     margin: 8px 8px;
     font-size: 13px;    
+    border: 1.5px solid transparent; 
 }
 
 .form input:focus {
@@ -115,7 +116,15 @@ body{
 .form input[type="submit"]{
     background-color: #a0a198;
     cursor: pointer;
+    transition: 0.4s;
 }
+
+.form input[type="submit"]:hover{
+    background-color: #232122;
+    color: white;
+}
+
+
 
 /*====================================================================================================================*/
 
