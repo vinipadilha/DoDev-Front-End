@@ -63,10 +63,10 @@ body{
 
 .options p{
     color: white;
-    font-size: 10px;
+    font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-right: 46vw; /*margem a direita, para distanciar das outras páginas*/
-    font-size: 2vw;
+    font-size: 
 }
 
 .options li a:hover {
@@ -123,6 +123,15 @@ body{
     background-color: #232122;
     color: white;
 }
+
+@media screen and (max-width: 800px) {
+    .options li {
+        display: none;
+    }
+
+
+}
+
 
 
 
