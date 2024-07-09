@@ -22,3 +22,19 @@ form.addEventListener('submit', function(event) {
     // Exibe uma mensagem de sucesso (opcional)
     alert('Dados armazenados localmente com sucesso!');
 });
+
+
+
+function menuShow() {
+    let mobileMenu = document.querySelector('.menu-content')
+
+    if(mobileMenu.classList.contains('open')) {
+        mobileMenu.classList.remove('open');
+
+    } else {
+        mobileMenu.classList.add('open')
+    }
+
+}
+
+
