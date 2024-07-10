@@ -240,6 +240,19 @@ body{
     padding: 10px;
 }
 
+@media screen and (max-width: 800px) {
+    .box{
+        display: block;
+        width: 80vw;
+        height: 45vh;
+        margin-left: 10vw;
+        margin-top: 5vh;
+    
+    }
+
+    
+}
+
 
 .box img{
     max-width: 100%;
