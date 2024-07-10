@@ -246,9 +246,10 @@ body{
     height: auto;
     z-index: 1; /* Garanta que o z-index seja menor que o da .nav */
     border: 2px solid transparent; /* Inicializa a borda transparente */
-    border-radius: 6px;
+    border-radius: 10px;
+    
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Transições com ease-out */
 }
-
 
 .box h3, p{
     margin-left: 1.5vw;
