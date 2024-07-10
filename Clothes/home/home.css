@@ -90,6 +90,9 @@ body{
     border-radius: 15px;
 }
 
+
+
+
 .form h4{
     font-family: "Playwrite DE Grund", cursive;
     font-size: 20px;
@@ -106,6 +109,7 @@ body{
     font-size: 13px;    
     border: 1.5px solid transparent; 
 }
+
 
 .form input:focus {
     border: 1.5px solid #232122; 
