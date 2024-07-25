@@ -184,6 +184,22 @@ body{
     }
 }
 
+.modalContainer {
+    float: right;
+    width: 40vw;
+    margin-top: 12vh;
+    background-color: white;
+    height: 88vh;
+}
+
+.modal {
+    
+    
+
+}
+
+
+
 
 /*====================================================================================================================*/
 
