@@ -20,7 +20,7 @@
                 <li><a href="/home/home.html">HOME</a></li>
                 <li><a href="/about/about.html">SOBRE NÓS</a></li>
                 <li>
-                    <a href="/cart/cart.html" class="cartLink">
+                    <a  class="cartLink" onclick="openModal()">
                         <img src="/imagens/icons8-cart-30.png" class="cartImg" >
                     </a>
                 </li>
@@ -32,6 +32,31 @@
         </button>
         
     </section>
+
+    <dialog class="modalContainer">
+
+        <div class="modal modal-dialog-scrollable">
+
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <p>Seu carrinho de compras</p>
+                    <button class="btn-left" onclick="closeModal()"><img src="/imagens/x-regular-24.png" alt=""></button>
+                    
+                </div>
+
+                <div class="modalBody">
+                        
+                </div>
+
+                <div class="modalFooter">
+                    <button class="checkout-btn">Finalizar Compra</button>
+                            
+                </div>
+            </div>
+            
+            
+        </div>
+    </dialog>
     
 
 
@@ -116,6 +141,8 @@
 
     <script src="product.js"></script>
     <script src="/home/form.js"></script>
+    <script src="/home/modal.js"></script>
+    
     
 </body>
 </html>
