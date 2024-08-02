@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoDev Clothes</title>
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="nav">
+        <ul class="options">
+
+            <p><strong>DoDev Clothes</strong></p>
+
+
+                <li><a href="/home/home.html">HOME</a></li>
+                <li><a href="/about/about.html">SOBRE NÓS</a></li>
+                <li>
+                    <a  class="cartLink" onclick="openModal()">
+                        <img src="/imagens/icons8-cart-30.png" class="cartImg" >
+                    </a>
+                </li>
+
+        </ul>
+
+        <button class="btn-menu" onclick="menuShow()">
+            <img src="/imagens/icons8-menu-50.png">
+        </button>
+        
+    </section>
+    
+    <dialog class="modalContainer">
+
+        <div class="modal modal-dialog-scrollable">
+
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <p>Seu carrinho de compras</p>
+                    <button class="btn-left" onclick="closeModal()"><img src="/imagens/x-regular-24.png" alt=""></button>
+                    
+                </div>
+
+                <div class="modalBody">
+                    <div id="cart-items"></div>
+                </div>
+
+                <div class="modalFooter">
+                    <button class="checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+            
+            
+        </div>
+    </dialog>
+
+
+    <section class="content">
+
+    
+
+        <div class="menu-content">
+            <ul>
+                <li><a href="/home/home.html">HOME</a></li>
+                <li><a href="/about/about.html">SOBRE NÓS</a></li>
+                <li>
+                    <a href="/cart/cart.html" class="cartLink">
+                        <img src="/imagens/icons8-cart-30.png" class="cartImg" >
+                    </a>
+                </li>
+
+            </ul>
+
+        </div> 
+
+        <div class="title">
+            <h1>Seu armário tech.</h1>
+            <h6>Roupas confortáveis que voçê não precisa nem passar!</h6>
+        </div>
+
+        <div class="bannerImg">
+            <img src="/imagens/banner.jpg" alt="Banner DoDev Clothes">
+        </div>
+
+        <div class="topSellers">
+            <h1> <strong>Mais vendidos</strong></h1>
+        </div>
+
+        <section class="products">
+
+            <div class="box">
+                <a href="/products/product1.html">
+                    <img src="/imagens/camiseta1-1.jpg" alt="">
+                    <h3>Tech T-Shirt Gola V</h3>
+                    <p>R$ 165</p>
+                </a>
+            </div>
+        
+            <div class="box">
+                <a href="/products/product2.html">
+                    <img src="/imagens/camiseta2-1.jpg" alt="">
+                    <h3>Heavy Hoodie</h3>
+                    <p>R$ 449</p>
+                </a>
+                
+            </div>
+        
+            <div class="box">
+                <a href="/products/product3.html">
+                    <img src="/imagens/camiseta3-1.jpg" alt="">
+                    <h3>Tech T-Shirt Long Sleeve</h3>
+                    <p>R$ 199</p>
+                </a>
+            </div>
+
+        </section>
+
+
+        <div class="form">
+            <h4>Receber Promoções</h4>
+            <form id="user-form">
+                <input type="text" id="name" value="" placeholder="Insira seu nome" required>
+                <input type="email" id="email" value="" placeholder="Insira seu email" required>
+                <input type="tel" id="telefone" value="" placeholder="Insira um telefone para contato" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+
+    </section>
+
+    
+
+    <script src="form.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
+
+<div></div>

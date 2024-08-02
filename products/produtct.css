@@ -1,0 +1,459 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  ol, ul {
+    list-style: none;
+  }
+
+
+.nav{
+    height: 12vh; /* */
+    width: 100vw;
+    background-color: #232122e5;
+    display: flex; /* Usa flexbox para alinhar os intens*/
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    position: fixed; /* Fixa a nav no topo da página */
+    z-index: 1000;
+}
+
+body{
+    height: 100vh;
+    
+}
+
+.content{
+    background-color: #EEEEEA;
+    height: 100vh;
+    overflow: auto; /* previne o colapso das margens, assim uma não fica em cima da outra*/
+}
+
+.options {
+    width: 100vw;
+    text-align: center;
+
+}
+  
+.options li {
+    display: inline-block; /*Exibe os itens da lista em ordem de linha*/
+    margin: 0 20px; /*Adiciona uma margem lateral de 30px em cada lado, 0 margem nos sentidos cima e baixo*/
+}
+
+.options p {
+    display: inline-block; /*Para o paragráfo também ficar em linha*/
+    margin: 0 30px;
+}
+  
+.options li a{
+    text-align: center; /* Centraliza o texto dentro do link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white;
+    font-size: 3vh; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.options p{
+    color: white;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 46vw; /*margem a direita, para distanciar das outras páginas*/
+    
+}
+
+.options li a:hover {
+    opacity: 0.6;
+}
+
+.cartImg {
+    height: 5vh;
+    margin-bottom: -1vh;
+}
+
+.form{
+    width: 60vw;
+    margin-left: 20vw;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 2%;
+    background-color: #dbdcd3c1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
+    border-radius: 15px;
+}
+
+
+
+
+.form h4{
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 20px;
+    margin-top: -2vh;
+    margin-bottom: 1vh;
+}
+
+.form input{
+    width: 20vw;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    margin: 8px 8px;
+    font-size: 13px;    
+    border: 1.5px solid transparent; 
+}
+
+
+.form input:focus {
+    border: 1.5px solid #232122; 
+    outline: none; /* Remove o contorno padrão */
+}
+
+.form input[type="submit"]{
+    background-color: #a0a198;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.form input[type="submit"]:hover{
+    background-color: #232122;
+    color: white;
+}
+
+
+.btn-menu{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .options li {
+        display: none;
+    }
+
+    .btn-menu img {
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .btn-menu{
+        border: none;
+        background-color: transparent;
+        display: flex;
+        margin-right: 5vw;
+    }
+
+    .menu-content{
+        background-color: #232122e5;
+        width: 100vw;
+        height: 33vh;
+        display: none;
+        margin-top: 12vh;
+        justify-content: center;
+        text-align: center;
+        position: fixed;
+        
+    }
+
+    .menu-content a{
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 3vh; 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .menu-content.open{
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 801px) {
+    .menu-content {
+        display: none;
+    }
+}
+
+
+
+.modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    height: 80%; /* Define uma altura maior para o modal */
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c1bfbf;
+    padding-bottom: 10px;
+}
+
+.modalHeader p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.modalHeader .btn-left {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modalHeader .btn-left img {
+    width: 35px;
+    height: 35px;
+}
+
+.modalBody {
+    padding: 10px 0;
+    flex-grow: 1; /* Faz o corpo do modal crescer para ocupar o espaço disponível */
+    overflow-y: auto; /* Adiciona rolagem vertical quando o conteúdo exceder a altura máxima */
+    border-bottom: 1px solid #c1bfbf;
+}
+
+.cartItem {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #c1bfbf;
+    padding-bottom: 10px;
+}
+
+.cartItem h4, .cartItem p {
+    margin: 5px 0;
+}
+
+.modalFooter {
+    padding: 10px 0;
+    text-align: center; /* Centraliza o botão de checkout */
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/*========================================================================*/
+
+
+.columnImg {
+    margin-left: 15vw;
+    margin-top: 16vh;
+    height: 90vh;
+    width: 38vw;
+    border: 2px solid transparent;
+    float: left;
+}
+
+.columnInfo {
+    margin-left: 55vw;
+    margin-top: 16vh;
+    height: 80vh;
+    width: 35vw;
+    border: 4px solid transparent;
+    padding: 1%;
+}
+
+.mainImg {
+    padding: 1%;
+    text-align: center;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.mainImg img {
+    height: auto;
+    width: 86%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.othersImg {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 8%;
+}
+
+.othersImg img {
+    height: auto;
+    width: 24%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    border-radius: 10px;
+}
+
+.othersImg img:hover {
+    border-color: #232122;
+}
+
+.othersImg{
+    cursor: pointer;
+}
+
+.productTitle h3{
+    font-family:  "Playwrite DE Grund", cursive;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.productTitle span{
+    font-family:  "Playwrite DE Grund", cursive;
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+.text-info p{
+    font-family:  "Playwrite DE Grund", cursive;
+    font-size: 13px;
+    margin-bottom: 5%;
+    letter-spacing: 0.1px; /* Aumenta o espaçamento entre letras em 0.1 pixel */
+}
+
+.text-info h1{
+    font-family:  "Playwrite DE Grund", cursive;
+    font-size: 18px;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+.text-info{
+    margin-top: 8vh;
+}
+
+
+
+.productOptions {
+    display: flex;
+    gap: 10%;
+    margin-top: 2vh;
+}
+
+.productOptions .quantityContainer,
+.productOptions .sizeContainer {
+    display: flex;
+    flex-direction: column; /* Empilha verticalmente os elementos dentro dos contêineres */
+}
+
+.productOptions label {
+    font-size: 18px;
+    color: #333;
+    font-family: "Playwrite DE Grund", cursive;
+    margin-bottom: 0.1vh;
+}
+
+.productOptions input[type="number"]{
+    width: 45%; /* Ajuste conforme necessário */
+    padding: 1vh;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: "Playwrite DE Grund", cursive;
+    margin-bottom: 10px;
+    background-color: #E0E1D9;
+}
+
+.productOptions select {
+    width: 120%; /* Ajuste conforme necessário */
+    padding: 1vh;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: "Playwrite DE Grund", cursive;
+    margin-bottom: 10px;
+    background-color: #E0E1D9;
+}
+
+.productOptions input[type="number"]:focus,
+.productOptions select:focus {
+    border-color: black; 
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+.btn-cart button{
+    width: 83%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #232122;
+    color: white;
+    font-family: "Playwrite DE Grund", cursive;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
+    border: 2px solid transparent ;
+}
+
+.btn-cart button:hover{
+    background-color: #E0E1D9;
+    color: #333;
+    border: 2px solid #333;
+}
+
+
+.btn-cart{
+    margin-top: 2vh;
+}
+
+.btn-left {
+    position: absolute;
+    margin-top: 17vh; /* Ajuste conforme necessário */
+    margin-left: 13vw; /* Ajuste conforme necessário */
+    z-index: 100; /* Para garantir que fique acima do conteúdo */
+}
+
+.btn-left a img {
+    width: 10%; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoDev Clothes</title>
+    <link rel="stylesheet" href="about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="nav">
+        <ul class="options">
+
+            <p><strong>DoDev Clothes</strong></p>
+
+
+                <li><a href="/home/home.html">HOME</a></li>
+                <li><a href="/about/about.html">SOBRE NÓS</a></li>
+                <li>
+                    <a  class="cartLink" onclick="openModal()">
+                        <img src="/imagens/icons8-cart-30.png" class="cartImg" >
+                    </a>
+                </li>
+
+        </ul>
+
+        <button class="btn-menu" onclick="menuShow()">
+            <img src="/imagens/icons8-menu-50.png">
+        </button>
+        
+    </section>
+    
+    <dialog class="modalContainer">
+
+        <div class="modal modal-dialog-scrollable">
+
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <p>Seu carrinho de compras</p>
+                    <button class="btn-left" onclick="closeModal()"><img src="/imagens/x-regular-24.png" alt=""></button>
+                    
+                </div>
+
+                <div class="modalBody">
+                    <div id="cart-items"></div>
+                </div>
+
+                <div class="modalFooter">
+                    <button class="checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+            
+            
+        </div>
+    </dialog>
+
+    <section class="content">
+
+
+        <div class="menu-content">
+            <ul>
+                <li><a href="/home/home.html">HOME</a></li>
+                <li><a href="/about/about.html">SOBRE NÓS</a></li>
+                <li>
+                    <a href="/cart/cart.html" class="cartLink">
+                        <img src="/imagens/icons8-cart-30.png" class="cartImg" >
+                    </a>
+                </li>
+
+            </ul>
+
+        </div> 
+
+    
+        <h1>SOBRE NÓS</h1>
+        <p>
+            Bem-vindo à DoDev Clothes! Fundada em 2024, nossa loja nasceu da paixão por desenvolvimento de software e moda. Percebemos que desenvolvedores de software têm um estilo único e necessidades específicas quando se trata de vestuário. Com isso em mente, criamos uma linha de roupas que combina conforto, funcionalidade e estilo, tudo pensado especialmente para devs.
+        </p>
+        <p>
+            Na DoDev Clothes, acreditamos que a roupa que você veste pode ser uma extensão da sua personalidade e do seu trabalho. Nossas peças são feitas com materiais de alta qualidade, proporcionando conforto para longas sessões de codificação e um visual moderno para qualquer ocasião.
+        </p>
+        <p>
+            Nossa missão é fornecer roupas que não apenas representem a cultura dos desenvolvedores, mas também inspirem inovação e criatividade. Cada peça é desenhada para ser prática, com detalhes que facilitam a vida de quem passa horas em frente ao computador, sem abrir mão do estilo.
+        </p>
+        <p>
+            Além disso, estamos comprometidos com a sustentabilidade. Todos os nossos produtos são fabricados com práticas éticas e sustentáveis, garantindo que você possa se sentir bem não apenas com o que está vestindo, mas também com a forma como foi feito.
+        </p>
+        <p>
+            Junte-se a nós nessa jornada e vista-se com orgulho de ser um desenvolvedor. Explore nossa coleção e descubra como a moda pode ser uma extensão da sua paixão pelo desenvolvimento de software. <strong> Seja um dev, vista DoDev Clothes! </strong> 
+        </p>
+
+
+        <div class="form">
+            <h4>Receber Promoções</h4>
+            <form id="user-form">
+                <input type="text" id="name" value="" placeholder="Insira seu nome" required>
+                <input type="email" id="email" value="" placeholder="Insira seu email" required>
+                <input type="tel" id="telefone" value="" placeholder="Insira um telefone para contato" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <script src="/home/form.js"></script>
+    <script src="/home/modal.js"></script>
+</body>
+</html>
